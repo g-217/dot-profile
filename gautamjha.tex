@@ -1,106 +1,98 @@
-\documentclass[letterpaper,11pt]{article}
-\newlength{\outerbordwidth}
-\pagestyle{empty}
-\raggedbottom
-\raggedright
-\usepackage[svgnames]{xcolor}
-\usepackage{framed}
-\usepackage{tocloft}
-
-
-%-----------------------------------------------------------
-%Edit these values as you see fit
-
-\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
-\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
-\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
-
-
-%-----------------------------------------------------------
-%Margin setup
-
-\setlength{\evensidemargin}{-0.25in}
-\setlength{\headheight}{0in}
-\setlength{\headsep}{0in}
-\setlength{\oddsidemargin}{-0.25in}
-\setlength{\paperheight}{11in}
-\setlength{\paperwidth}{8.5in}
-\setlength{\tabcolsep}{0in}
-\setlength{\textheight}{9.5in}
-\setlength{\textwidth}{7in}
-\setlength{\topmargin}{-0.3in}
-\setlength{\topskip}{0in}
-\setlength{\voffset}{0.1in}
-
-
-%-----------------------------------------------------------
-%Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{\vspace{8pt}
-  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
-    \begin{shaded}
-\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
-    \end{shaded}
-  }\vspace{-5pt}
-}
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
-%-----------------------------------------------------------
-
-
+\documentclass{tccv}
+\usepackage[english]{babel}
 \begin{document}
 
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-\textbf{\Large Gautam Jha} & (+91)9731734217 \\
-https://linkedin.com/in/gautam0217 & gautam0217@gmail.com \\
-Bangalore \\
-\end{tabular*}
-\\
+\part{Gautam Jha}
 
+\section{Work experience}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Education}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{eventlist}
+
+\item{April 2018 -- Present}
+     {SDE3, Adobe Systems, Bangalore}
+     {Dreamweaver and Brackets}
+     
+Currently work on \href{https://www.adobe.com/in/products/dreamweaver.html}{Dreamweaver} maintenance and enhancements. Also contribute to Adobe's open-source, CEF based Text Editor, \href{https://github.com/adobe/brackets}{Brackets}
+
+I am using C, Objective-C, C++98/11/14/17, JS, Cocoa, MFC, CEF to deliver my work.
+
+\item{August 2016 -- April 2018}
+     {SDE2, Adobe Systems, Noida, India}
+     {PDF/PS Print and Scan on SOCs}
+
+Worked on maintenance, enhancement and porting of Adobe Postscript and PDF RIP(Raster Image Processor). Apart from bug fixes and enhancements, porting the product to different SOC and RTOS combinations was important part of my role.
+
+I used C, C++98/11, PDF, PostScript and Linux (Desktop, RTOSs) to deliver my work.
+
+\item{January 2015 -- August 2016}
+     {Sr SE, PIMCO(Contractor)}
+     {C++ financial number crunching}
+
+Enhanced and maintained financial analytics software-suite responsible for calculating risk numbers for Fixed Income Instruments. Reducing the run-time of different modules was primary part of my role. Also Maintained infra-structure libraries like Memcached, caching etc.
+Ideated and implemented a small declarative language to control command line argument
+parsing and validations (CLAP).
+
+Used C++11, Oracle, Sybase C API, Memcached C API, Valgrind, Flex, Bison, GCC, GDB, GNU
+MAKE, CMAKE, Boost CPP Libs, Linux to deliver my tasks.
+
+\item{January 2013 -- January 2015}
+     {Consultant, FICO, Bangalore, India}
+     {FICO-CCS, Rule Engines based systems}
+
+Worked with BAs in analyzing the client requirements for the product FICO-CCS.
+Customized, implemented, maintained and supported the product for different banks.
+Maintained and enhanced legacy C and C++ code base for the product.
+Wrote Tools to automate daily work as well as for information retrieval from the System.
+
+Used C, C++98, Python2.7, MySQL, Linux, XML, XSLT, XSD, YAML, FreeMarker and FICO
+proprietary rule engines to deliver my tasks.
+\end{eventlist}
+
+\personal
+    {Bangalore, India}
+    {+91 9731 734217}
+    {gautam0217@gmail.com}
+    
+\section{Profile Summary}
 \begin{itemize}
-
-\item \ressubheading{JNU}{New Delhi, India}{MCA}{2010 - 2013}
-
-\item \ressubheading{Other University Name}{City, Country}{BSc, MSc, PhD, or something else}{2004 - 2009}
-
+    \item{ 6 years of experience in Software Development with proficiency in Data Structures, Algorithms, Design Patterns, C++, C, JavaScript, Python and Shell Scripting.}
+    \item{C++ Enthusiast with knowledge of memory models, threading models, microprocessor instructions and compiler concepts.}
+    \item{Worked on C++ Templates, Policy based designs and meta-programming.}
+    \item{Come up with internal-tooling, automation, build system improvement ideas and implementations.}
+    \item{Good knowledge of OS internals and feature, especially Linux.}
+    \item{Work on Agile Software Development Methodology.}
+    \item{Worked with PIMCO and FICO, and have domain experience in debt-markets, financial
+analytics, and rule-engines.}
+    \item{Have strong Mathematics foundations}
 \end{itemize}
 
+\section{Education}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Some important section}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{yearlist}
 
-\begin{enumerate}
- \item Around 4 years of experience in Software Development with proficiency in Data Structures, Algorithms, Design Patterns, C++, C, Python and Shell Scripting.
- \item C++ Enthusiast with intermediate level knowledge of Templates, Policy based designs, template meta-programming, memory models, threading models, microprocessor instructions, compiler concepts and Linux internals.
- \item Possess sound knowledge of Theoretical Computer Science and Mathematics.
- \item Worked with PIMCO and FICO, and have domain experience in debt-markets, financial analytics, and rule-engines.
- \item Second item
-\end{enumerate}
+\item {2010 -- 2013}
+     {Masters Computer Applications (MCA)}
+     {JNU, New Delhi, India}
 
+\item[Mathematics and Physics]{2006 -- 2009}
+    {Bachelor of Science(B.Sc.)}
+    {Gov. Post Graduation College, Obra, Sonbhadara, UP, India}
+
+\end{yearlist}
+
+\section{Communication skills}
+
+\begin{factlist}
+\item{Hindi}{Oral: good -- Written: good}
+\item{English}{Oral: fair -- Written: good}
+\item{Maithili}{Native Speaker}
+\end{factlist}
+
+\section{Social}
 \begin{itemize}
- \item First item
- \item Second item
+\item \href{https://stackoverflow.com/users/4373992/gjha}{Stack Overflow}
+\item \href{https://github.com/gautam0217}{Github}
+\item \href{https://www.linkedin.com/in/gautam0217}{Linkedin}
 \end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Awards, Grants \& Honours}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\vspace{-2pt}
-	\begin{center}\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
-		\multicolumn{2}{c}{Nobel Prize \cftdotfill{\cftdotsep} 2013}\\
-        \multicolumn{2}{c}{Big grant \cftdotfill{\cftdotsep} 2010-2013}\\
-		\vphantom{E}
-\end{tabular*}
-\end{center}\vspace*{-16pt}
-
 
 \end{document}
-
