@@ -143,4 +143,6 @@ yourfunction() {
 alias unixpath=yourfunction
 umask 002
 
-
+alias psup='ps -ax -o etime,command -c | grep'
+alias gitsubup='git submodule update --init --recursive'
+alias less='less -N'
