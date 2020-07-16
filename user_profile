@@ -1,2 +1,0 @@
-export PATH=$PATH:$HOME/bin
-alias wait_for_last_command='$HOME/bin/waiton $!'
